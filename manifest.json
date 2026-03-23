@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Jane Street 快捷填表助手",
+  "version": "1.1",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.janestreet.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
